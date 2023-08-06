@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Conhecendo você e um pouco do seu dia a dia</h1>
+    </header>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <div>
+            <fieldset class="primeiroquadro">
+                <legend class="dados1">Dados sobre mim</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required><br>
+                </p>
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required> <br>
+                </p>
+                <p>
+                    <label for="namemom">Nome da mãe:</label>
+                    <input type="text" name="name" id="namemom" required><br>
+                </p>
+                <p>
+                    <label for="namedad">Nome do pai:</label>
+                    <input type="text" name="name" id="namedad" required><br>
+                </p>
+                <p>
+                    <label for="niver">Data de Nascimento:</label>
+                    <input type="date" name="niver" id="niver" required><br>
+                </p>
+            </fieldset>
+            <fieldset class="primeiroquadro">
+                <legend class="dados1">Sexo:</legend>
+                <p>
+                    <label for="sexofem"><input type="radio" name="sexo" id="sexofem" required>Feminino</label>
+                    <label for="sexomasc"><input type="radio" name="sexo" id="sexomasc">Masculino</label>
+                </p>
+            </fieldset>
+            <fieldset class="primeiroquadro">
+                <legend class="dados1">Cor da pele:</legend>
+                <p>
+                    <input type="radio" name="cor" id="corpele1" required><label for="corpele1">Branco(a)</label> <br>
+                    <input type="radio" name="cor" id="corpele2"><label for="corpele2">Preto(a)</label><br>
+                    <input type="radio" name="cor" id="corpele3"><label for="corpele3">Pardo(a)</label><br>
+                    <input type="radio" name="cor" id="corpele4"><label for="corpele4">Amarelo(a)</label><br>
+                    <input type="radio" name="cor" id="corpele5"><label for="corpele5">Outro(a)</label><br>
+                </p>
+                <!---detalhe que eu precisei selecionar os ids diferentemente pra poderem funcionar no type radio, já que type radio quer dizer seleção de uma opção de cada vez-->
+            </fieldset>
+            <fieldset class="primeiroquadro">
+                <legend class="dados1">Selecione seus hobbies:</legend>
+                <p>
+                    <input type="checkbox" name="bola" id="bola" required><label for="bola">Jogar bola</label>
+                    <input type="checkbox" name="ler" id="ler"><label for="ler">Ler livros</label>
+                    <input type="checkbox" name="estudar" id="estudar"><label for="estudar">Estudar</label>
+                    <input type="checkbox" name="passear" id="passear"><label for="passear">Ir ao shopping</label>
+                    <input type="checkbox" name="jogar" id="jogar"><label for="jogar">Jogar VideoGame</label>
+                    <input type="checkbox" name="sair" id="sair"><label for="sair">Sair com amigo(a)</label>
+                </p>
+            </fieldset>
+            <fieldset class="primeiroquadro">
+                <legend class="dados1">Outras curiosidades</legend>
+                <p>
+                    <label for="horas">A que horas você acorda?</label>
+                    <input type="time" name="horas" id="horas" required>
+                </p>
+                <p>
+                    <label for="comer">O que gosta de comer no café da manhã?</label> <input type="text" name="comer"
+                        id="comer" required>
+                </p>
+            </fieldset>
+            <fieldset class="primeiroquadro">
+                <legend class="dados1">Selecione linguagens que se identifica:</legend>
+                <p>
+                    <input type="checkbox" name="ling" id="HTML" required><label for="HTML">Html5 e CSS3</label>
+                    <input type="checkbox" name="ling" id="Java"><label for="Java">Java</label>
+                    <input type="checkbox" name="ling" id="PHP"><label for="PHP">PHP</label>
+                    <input type="checkbox" name="ling" id="Phyton"><label for="Phyton">Phyton</label>
+                    <input type="checkbox" name="ling" id="C#"><label for="C#">C#</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar dados">
+                <input type="reset" value="Limpar dados">
+            </p>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
